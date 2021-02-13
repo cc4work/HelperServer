@@ -23,12 +23,14 @@ namespace HelperServer
         {
             IDevice device = null;
             controller
-            .AttachScript(typeof(如果的世界))
-            .AttachAccount(@"c:\账号.txt")
-            .AttachImageInfos(@"c:\imageInfos.txt")
-            .BuildServer()
-            .Run();
+                .WithScript(typeof(如果的世界))
+                .WithAccount(@"c:\账号.txt")
+                .WithImageInfos(@"c:\imageInfos.txt")
+                .WithCommands("")
+                .BuildServer()
+                .Run();
             controller.Stop();
+
             controller.GetClient(device).Run();
             controller.GetClient(device).Stop();
             controller.GetClientDetail();

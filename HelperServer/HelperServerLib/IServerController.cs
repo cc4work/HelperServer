@@ -9,13 +9,14 @@ namespace HelperServerLib
 {
     public interface IServerController
     {
-        IServerController AttachScript(Type type);
-        IServerController AttachAccount(string v);
-        IServerController AttachImageInfos(string v);
+        IServerController WithScript(Type type);
+        IServerController WithAccount(string v);
+        IServerController WithImageInfos(string v);
         void Run();
         IServerController BuildServer();
         void Stop();
         IHelperClient GetClient(IDevice device);
         void GetClientDetail();
+        IServerController WithCommands(string v);
     }
 }
