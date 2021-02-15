@@ -7,7 +7,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperServerApp", "HelperSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperServerLib", "HelperServerLib\HelperServerLib.csproj", "{BDA00FA4-5480-4638-901D-280E7F69CCA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperShareLib", "HelperShareLib\HelperShareLib.csproj", "{94B3FD3F-556A-4396-A381-A1A41772D889}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelperShareLib", "HelperShareLib\HelperShareLib.csproj", "{94B3FD3F-556A-4396-A381-A1A41772D889}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalRServer", "SignalRServer", "{EA4CBF9F-FFBE-4556-B6BA-3830989CB255}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.Server", "SignalR.Server\SignalR.Server.csproj", "{83B63C88-62DD-44EA-8C7D-F36D1F3F448D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignaRlClient", "SignaRlClient", "{880B6297-C457-467E-A62A-448DD1557654}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.Client", "SignalR.Client\SignalR.Client.csproj", "{5D5280DD-0A1A-464C-9BE9-F34077841D64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +35,21 @@ Global
 		{94B3FD3F-556A-4396-A381-A1A41772D889}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94B3FD3F-556A-4396-A381-A1A41772D889}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94B3FD3F-556A-4396-A381-A1A41772D889}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83B63C88-62DD-44EA-8C7D-F36D1F3F448D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B63C88-62DD-44EA-8C7D-F36D1F3F448D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B63C88-62DD-44EA-8C7D-F36D1F3F448D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83B63C88-62DD-44EA-8C7D-F36D1F3F448D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D5280DD-0A1A-464C-9BE9-F34077841D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D5280DD-0A1A-464C-9BE9-F34077841D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D5280DD-0A1A-464C-9BE9-F34077841D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D5280DD-0A1A-464C-9BE9-F34077841D64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{83B63C88-62DD-44EA-8C7D-F36D1F3F448D} = {EA4CBF9F-FFBE-4556-B6BA-3830989CB255}
+		{5D5280DD-0A1A-464C-9BE9-F34077841D64} = {880B6297-C457-467E-A62A-448DD1557654}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CCFE6D8B-3461-4F1C-B7FC-7C3E52A3B809}
