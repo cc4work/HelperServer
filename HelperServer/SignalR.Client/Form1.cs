@@ -34,7 +34,7 @@ namespace SignalR.Client
         {
             connection.On<string, string>("ReceiveMessage", (user, message) =>
             {
-                var newMessage = $"{user}: {message}";
+                var newMessage = $"ReceiveMessage from server {user}: {message}";
                 Console.WriteLine(newMessage);
             });
 

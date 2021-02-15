@@ -30,7 +30,6 @@ namespace HelperServer
                 .BuildServer()
                 .Run();
             controller.Stop();
-
             controller.GetClient(device).Run();
             controller.GetClient(device).Stop();
             controller.GetClientDetail();
