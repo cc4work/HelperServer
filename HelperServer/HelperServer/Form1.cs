@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using HelperServerLib;
 using HelperShareLib;
-
+using System.Pipeline;
 namespace HelperServer
 {
     public partial class Form1 : Form
@@ -29,6 +29,7 @@ namespace HelperServer
                 .WithCommands("")
                 .BuildServer()
                 .Run();
+
             controller.Stop();
             controller.GetClient(device).Run();
             controller.GetClient(device).Stop();
