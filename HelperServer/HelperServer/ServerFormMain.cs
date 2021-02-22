@@ -10,11 +10,12 @@ using System.Windows.Forms;
 using HelperServerLib;
 using HelperShareLib;
 using System.Pipeline;
+
 namespace HelperServer
 {
-    public partial class Form1 : Form
+    public partial class ServerFormMain : Form
     {
-        public Form1()
+        public ServerFormMain()
         {
             InitializeComponent();
         }
@@ -34,6 +35,11 @@ namespace HelperServer
             controller.GetClient(device).Run();
             controller.GetClient(device).Stop();
             controller.GetClientDetail();
+        }
+
+        private void 启动SignalR服务ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            signalr.server
         }
     }
     class 如果的世界

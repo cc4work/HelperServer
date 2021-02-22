@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "HelperServer.App": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}

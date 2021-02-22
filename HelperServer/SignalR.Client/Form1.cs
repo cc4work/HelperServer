@@ -21,13 +21,14 @@ namespace SignalR.Client
         private void Form1_Load(object sender, EventArgs e)
         {
             connection = new HubConnectionBuilder()
-                .WithUrl("http://localhost:60712/notifyhub")
+                .WithUrl("https://localhost:5001/NotifyHub")
                 .Build();
             connection.Closed += async (error) =>
             {
                 await Task.Delay(new Random().Next(0, 5) * 1000);
                 await connection.StartAsync();
             };
+            connection.StartAsync();
         }
         HubConnection connection;
         private async void button1_ClickAsync(object sender, EventArgs e)

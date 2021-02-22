@@ -170,16 +170,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="ServerFormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ServerFormMain.Designer.cs">
+      <DependentUpon>ServerFormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="ServerFormMain.resx">
+      <DependentUpon>ServerFormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -212,6 +212,10 @@
     <ProjectReference Include="..\HelperShareLib\HelperShareLib.csproj">
       <Project>{94b3fd3f-556a-4396-a381-a1a41772d889}</Project>
       <Name>HelperShareLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SignalR.Server\SignalR.Server.csproj">
+      <Project>{83b63c88-62dd-44ea-8c7d-f36d1f3f448d}</Project>
+      <Name>SignalR.Server</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -11,11 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelperShareLib", "HelperSha
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalRServer", "SignalRServer", "{EA4CBF9F-FFBE-4556-B6BA-3830989CB255}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.Server", "SignalR.Server\SignalR.Server.csproj", "{83B63C88-62DD-44EA-8C7D-F36D1F3F448D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalR.Server", "SignalR.Server\SignalR.Server.csproj", "{83B63C88-62DD-44EA-8C7D-F36D1F3F448D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignaRlClient", "SignaRlClient", "{880B6297-C457-467E-A62A-448DD1557654}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.Client", "SignalR.Client\SignalR.Client.csproj", "{5D5280DD-0A1A-464C-9BE9-F34077841D64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperServer.App", "HelperServer.App\HelperServer.App.csproj", "{39A9B9A9-C145-4234-8357-80089F9FA1F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{5D5280DD-0A1A-464C-9BE9-F34077841D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D5280DD-0A1A-464C-9BE9-F34077841D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D5280DD-0A1A-464C-9BE9-F34077841D64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39A9B9A9-C145-4234-8357-80089F9FA1F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A9B9A9-C145-4234-8357-80089F9FA1F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A9B9A9-C145-4234-8357-80089F9FA1F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A9B9A9-C145-4234-8357-80089F9FA1F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
